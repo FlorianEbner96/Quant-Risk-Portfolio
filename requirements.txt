@@ -1,0 +1,21 @@
+# Quant-Risk-Portfolio-python — requirements
+# Install via: pip install -r requirements.txt
+
+# Core numerical computing
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Visualisation
+matplotlib>=3.7.0
+
+# Jupyter
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
+
+# Optional: real market data (replace synthetic data in notebooks)
+# yfinance>=0.2.0
+
+# Optional: strip notebook outputs before committing
+# nbstripout>=0.6.0

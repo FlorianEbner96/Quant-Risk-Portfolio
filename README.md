@@ -1,4 +1,4 @@
-# quant-risk-python
+# Quant-Risk-Portfolio
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -6,9 +6,8 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-1.24%2B-013243?logo=numpy)
 ![SciPy](https://img.shields.io/badge/SciPy-1.10%2B-8CAAE6?logo=scipy)
-
-Quantitative risk analytics and portfolio construction implemented from scratch in Python.  
-Covers Monte Carlo simulation, portfolio optimization, and a comprehensive quant finance reference spanning 30+ concepts — from Basel III market risk to factor models and backtesting methodology.
+  
+Quantitative risk portfolio, covering Monte Carlo simulation, portfolio optimization, and a comprehensive quant finance reference spanning 30+ concepts — from Basel III market risk to factor models and backtesting methodology.
 
 Built as a self-study and portfolio project in preparation for **Quantitative Risk Analyst** and **AI/ML in Finance** roles.
 
@@ -18,9 +17,9 @@ Built as a self-study and portfolio project in preparation for **Quantitative Ri
 
 | Folder | Topic | Key Methods |
 |--------|-------|-------------|
-| [`01_var_monte_carlo`](./01_var_monte_carlo/) | Market Risk – VaR & CVaR | Monte Carlo, Cholesky, Kupiec Backtest |
-| [`02_portfolio_optimization`](./02_portfolio_optimization/) | Portfolio Construction | Markowitz, Risk Parity, Efficient Frontier |
-| [`03_quant_finance_learning`](./03_quant_finance_learning/) | Quant Finance Reference | 30+ concepts, theory + code |
+| [`MonteCarloVAR`](./MonteCarloVAR/) | Market Risk – VaR & CVaR | Monte Carlo, Cholesky, Kupiec Backtest |
+| [`PortfolioOptimization`](./PortfolioOptimization/) | Portfolio Construction | Markowitz, Risk Parity, Efficient Frontier |
+| [`QuantFinanceLearningNBs`](./QuantFinanceLearningNBs/) | Quant Finance Reference | 30+ concepts, theory + code |
 
 ---
 
@@ -79,7 +78,7 @@ pip install -r requirements.txt
 ### Run a notebook
 
 ```bash
-jupyter notebook 01_var_monte_carlo/var_monte_carlo.ipynb
+jupyter notebook MonteCarloVAR/var_monte_carlo.ipynb
 ```
 
 All notebooks use **synthetic market data** generated from realistic parameters — no external data sources required. To use real market data, replace the data generation section with `yfinance`:
@@ -95,24 +94,25 @@ returns = data['Adj Close'].pct_change().dropna()
 ## Repository Structure
 
 ```
-quant-risk-python/
+Quant-Risk-Portfolio/
 │
 ├── README.md
+├── LICENSE
 ├── requirements.txt
 ├── .gitignore
 │
-├── 01_var_monte_carlo/
+├── MonteCarloVAR/
 │   ├── var_monte_carlo.ipynb
 │   └── README.md
 │
-├── 02_portfolio_optimization/
+├── PortfolioOptimization/
 │   ├── portfolio_optimization.ipynb
 │   └── README.md
 │
-└── 03_quant_finance_learning/
-    ├── 01_market_fundamentals.ipynb
-    ├── 02_risk_measures_mpt.ipynb
-    ├── 03_strategies_backtesting.ipynb
+└── QuantFinanceLearningNBs/
+    ├── quant_finance_01_market_fundamentals.ipynb
+    ├── quant_finance_02_risk_measures_mpt.ipynbb
+    ├── quant_finance_03_strategies_backtesting.ipynb
     └── README.md
 ```
 
